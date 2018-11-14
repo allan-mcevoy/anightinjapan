@@ -21,8 +21,8 @@ defaults:
     layout: post
 email: allan.a.mcevoy@gmail.com
 description: A bolg about Japan.
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
