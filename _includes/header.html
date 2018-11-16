@@ -3,7 +3,12 @@
 
     <nav>
         <a href="/" {% if page.url == "/" %} class="selected" {% endif %} >Home</a>
-        <a href="/about/" {% if page.url == "/about/" %} class="selected" {% endif %} >About</a>
+            
+      {% for page in site.pages %}
+      
+        <a href="{{ page.url }}" {% if page.url == "/about/" %} class="selected" {% endif %} >{{ page.title }}</a>
+        
+      {% endfor %}
     </nav>
 
 
